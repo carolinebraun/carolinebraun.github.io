@@ -1,0 +1,143 @@
+html, body {
+  margin: 0;
+  background: url("contactheader.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+}
+
+
+/*menubar, modified from i101 homepage*/
+.menubar {
+	left: 0px;
+	top: 00px;
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	color: #fff;
+	background-color: #333333;
+	font-family: Geneva, sans-serif;
+	padding-right: 7px;
+	padding-left: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+/*from i101 homepage*/
+table.tablecenter {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.buttonattempt1 {
+  color: #fff;
+  font-size: 18px;
+  padding: 4px 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.invisible {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+h1, h2, a {
+  font-family: 'Oswald', serif;
+  text-transform: uppercase;
+}
+
+.speciallink {
+  font-family: Helvetikca, Arial, sans-serif; 
+  color: #efefef;
+}
+
+p {
+  font-family: Helvetikca, Arial, sans-serif; 
+}
+
+.supporting {
+  position: relative;
+  top: 350px;
+  background-color: #1c1c1c;
+  padding: 20px 0 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.supporting p {
+  color: #efefef;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col1 {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 99%;
+}
+
+.col3 {
+  float: left;
+  position: relative;
+  text-align: left
+  width: 10%;
+}
+
+a.btn:hover {
+  background:#ffa800;
+  color:#000;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background: url("6.jpg") no-repeat center center;
+  background-size: cover;
+  height: 520px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footer .container {
+  position: relative;
+  top: 220px;
+}
+
+.footer .btn {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.actualfooter {
+  position: relative;
+  vertical-align: bottom;
+  font-family: 'Oswald', serif;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer p {
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 4px;
+}

@@ -1,0 +1,223 @@
+html, body {
+  margin: 0;
+  background: url("aboutheader.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+}
+
+
+/*menubar, modified from i101 homepage*/
+.menubar {
+	left: 0px;
+	top: 00px;
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	color: #fff;
+	background-color: #333333;
+	font-family: Geneva, sans-serif;
+	padding-right: 7px;
+	padding-left: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+
+/*from i101 homepage*/
+table.tablecenter {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.buttonattempt1 {
+  color: #fff;
+  font-size: 18px;
+  padding: 4px 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.invisible {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+
+
+h1, h2, .i3, .i3right, a {
+  font-family: 'Oswald', serif;
+  text-transform: uppercase;
+}
+
+p, ul {
+  font-family: Helvetikca, Arial, sans-serif; 
+}
+
+.supporting {
+  position: relative;
+  top: 350px;
+  background-color: #1c1c1c;
+  padding: 20px 0 10px;
+}
+
+.supporting h2 {
+  color: #ffa800;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.supporting .i3 {
+  color: #cc6600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.moveover {
+  padding-left: 60px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.supporting p, ul {
+  color: #efefef;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.supporting .colleft {
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  width: 60%;
+}
+
+.pictureleft {
+  float: left;
+  position: relative;
+  padding-left: 65px;
+  padding-top: 40px;
+  width: 25%;
+}
+
+img {
+  border: 1px solid #efefef;
+}
+
+
+.colright {
+  position: relative;
+  float: right;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 80px;
+  width: 60%;
+}
+
+.pictureright {
+  float: right;
+  position: relative;
+  padding-right: 50px;
+  padding-top: 130px;
+  width: 27%;
+}
+
+.supporting .i3right {
+  color: #cc6600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+.colright p {
+  padding-right: 60px;
+}
+
+
+
+a.btn:hover {
+  background:#ffa800;
+  color:#000;
+}
+
+a.btn2:hover {
+  background:#ffa800;
+  color:#000;
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+  background: url("5s.jpg") no-repeat center center;
+  background-size: cover;
+  height: 534px;
+  text-align: center;
+  padding-top: 300px;
+}
+
+.footer .container {
+  position: relative;
+  top: 220px;
+}
+
+.footer h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  padding:220px 0 0;
+}
+
+.footer .btn {
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btncenter {
+  background-color: #1c1c1c;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 210px;
+}
+
+.btn2 {
+  background-color: #eee;
+  color: #1c1c1c;
+  font-size: 30px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.actualfooter {
+  position: relative;
+  vertical-align: bottom;
+  font-family: 'Oswald', serif;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #eee;
+}
+
+.footer p {
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 4px;
+}

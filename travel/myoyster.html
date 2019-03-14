@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>my oyster</title>
+	<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore:400,700" rel="stylesheet" type="text/css">
+	<link href="myoyster.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<img class="shutup" src="postmark.png">
+	<button type="button" class="postmarkbutton" onclick="randomPhoto(); resetText();"></button>
+
+	<img class="overlay" id="myWord" src="bloomington.png">
+	<button type="button" class="overlaybutton" onclick="description()"></button>
+	<p id="description" class="description"></p>
+
+	<img class="bkg" id="myImage" onload="checkImageLoad();" src="bloomington.jpg">
+
+
+	<script>
+		
+var strings=["amsterdam.jpg","amsterdam2.jpg","anchorage.jpg","badlands.JPG","bern.jpg","bern2.jpg","caseville.jpg","chesterton.jpg","chinchero.JPG","chinchero2.jpg","cusco.JPG","cusco2.jpg","custer.JPG","denali.JPG","fortwayne.JPG","geneva.jpg","glacierbay.JPG","haines.JPG","juneau.jpg","kailua.jpg","ketchikan.JPG","kona.JPG","krakow.jpg","krakow2.jpg","krakow3.jpg","lido.jpg","london.jpg","london2.jpg","london3.jpg","lucerne.jpg","lucerne2.jpg","niagara.JPG","oswiecim.jpg","prague.JPG","prague2.jpg","prague3.jpg","prague4.jpg","seward.JPG","seymour.JPG","talkeetna.JPG","venice.jpg","waimea.JPG","washingtondc.jpg","yellowstone.JPG"];
+
+function randomPhoto() {
+	var image=document.getElementById("myImage");
+	document.getElementById("myImage").style.visibility="hidden";
+	document.getElementById("myWord").style.visibility="hidden";
+	var randomIndex=Math.floor(Math.random()*strings.length);
+	var randomString=strings[randomIndex];
+	if (randomString==undefined){
+		strings=["amsterdam.jpg","amsterdam2.jpg","anchorage.jpg","badlands.JPG","bern.jpg","bern2.jpg","caseville.jpg","chesterton.jpg","chinchero.JPG","chinchero2.jpg","cusco.JPG","cusco2.jpg","custer.JPG","denali.JPG","fortwayne.JPG","geneva.jpg","glacierbay.JPG","haines.JPG","juneau.jpg","kailua.jpg","ketchikan.JPG","kona.JPG","krakow.jpg","krakow2.jpg","krakow3.jpg","lido.jpg","london.jpg","london2.jpg","london3.jpg","lucerne.jpg","lucerne2.jpg","niagara.JPG","oswiecim.jpg","prague.JPG","prague2.jpg","prague3.jpg","prague4.jpg","seward.JPG","seymour.JPG","talkeetna.JPG","venice.jpg","waimea.JPG","washingtondc.jpg","yellowstone.JPG"];
+		image.src="bloomington2.jpg";
+		document.getElementById("myWord").src="bloomington2.png";
+	}else{
+		image.src=randomString;
+		var word=document.getElementById("myWord");
+		var repl=randomString.slice(0,-3)+"png";
+		word.src=repl;
+	}
+	var indexList=strings.indexOf(randomString);
+	if (indexList > -1){
+		strings.splice(indexList,1);
+	}
+}
+
+function resetText() {
+	document.getElementById("description").innerHTML="";
+}
+
+function checkImageLoad() {
+	if (document.getElementById("myImage").complete == true){
+		console.log("1st_image Loaded!");
+		document.getElementById("myImage").style.visibility="visible";
+		document.getElementById("myWord").style.visibility="visible";
+	}
+}
+
+function description() {
+	var changedescr=document.getElementById("description");
+	var image = document.getElementById("myImage");
+	changedescr.style.color="initial";
+	if(image.src.match("bloomington.jpg")) { 
+		changedescr.innerHTML="our new front yard</br>indiana university campus</br>22 january 2017";
+	}else if(image.src.match("bloomington2")) { 
+		changedescr.innerHTML="bridge</br>12 february 2017";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("badlands")){ 
+		changedescr.innerHTML="sunset in badlands national park</br>south dakota road trip</br>15 march 2017";
+	}else if (image.src.match("caseville")){ 
+		changedescr.innerHTML="eastern michigan road trip</br>13 may 2016";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("chesterton")){ 
+		changedescr.innerHTML="biking 9.2-mile calumet trail</br>indiana dunes state park</br>3 july 2014";
+	}else if (image.src.match("custer")){ 
+		changedescr.innerHTML="sylvan lake in custer state park</br>south dakota road trip</br>13 march 2017";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("fortwayne")){ 
+		changedescr.innerHTML="hometown photo shoot</br>stephanie & meghana</br>30 june 2014";
+	}else if (image.src.match("kailua")){ 
+		changedescr.innerHTML="hawaiian islands</br>1-7 august 2011";
+	}else if (image.src.match("kona")||image.src.match("waimea")){
+		changedescr.innerHTML="hawaiian islands</br>1-7 august 2011";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("niagara")){ 
+		changedescr.innerHTML="oakwood cemetary</br>niagara falls, ny</br>18 december 2016";
+	}else if (image.src.match("seymour")){ 
+		changedescr.innerHTML="southern indiana</br>30 march 2012";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("washingtondc")){ 
+		changedescr.innerHTML="opera house</br>kennedy center</br>4 april 2013";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("yellowstone")){ 
+		changedescr.innerHTML="hot springs</br>wyoming</br>16 june 2013";
+	}else if (image.src.match("anchorage")||image.src.match("denali")||image.src.match("glacierbay")||image.src.match("haines")||image.src.match("juneau")||image.src.match("ketchikan")||image.src.match("seward")||image.src.match("talkeetna")){
+		changedescr.innerHTML="southern alaska</br>9-16 june 2016";
+	}else if (image.src.match("chinchero2")||image.src.match("cusco2")){
+		changedescr.innerHTML="peru microfinance initiative</br>15-25 may 2017";
+	}else if (image.src.match("chinchero")||image.src.match("cusco")){
+		changedescr.innerHTML="peru microfinance initiative</br>15-25 may 2017";
+		changedescr.style.color="#ffffe8";
+	}else if (image.src.match("krakow")||image.src.match("krakow3")||image.src.match("lido")||image.src.match("london")||image.src.match("london2")||image.src.match("london3")||image.src.match("oswiecim")||image.src.match("prague")||image.src.match("prague2")||image.src.match("prague4")||image.src.match("venice")){
+		changedescr.innerHTML="backpacking europe</br>2-19 july 2017";
+	}else if (image.src.match("krakow2")||image.src.match("prague3")){
+		changedescr.innerHTML="backpacking europe</br>2-19 july 2017";
+	}else if (image.src.match("bern2")||image.src.match("geneva")||image.src.match("amsterdam")||image.src.match("amsterdam2")||image.src.match("lucerne")){
+		changedescr.innerHTML="holland & switzerland</br>31 august-9 september 2018";
+	}else if (image.src.match("lucerne2")||image.src.match("bern")){
+		changedescr.innerHTML="holland & switzerland</br>31 august-9 september 2018";
+		changedescr.style.color="#ffffe8";
+//CANT GET THIS LINE TO WORK		changedescr.style.color="#ffffe8";
+	}else {
+		changedescr.innerHTML="under construction"
+	}
+	
+}	
+
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-97024650-1', 'auto');
+	  ga('send', 'pageview');
+	
+
+	</script>
+
+
+</body>
+
+</html>

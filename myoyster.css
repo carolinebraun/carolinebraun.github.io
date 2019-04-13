@@ -1,0 +1,101 @@
+html {
+	background-color: #ffffe8;
+}
+
+img {
+    pointer-events: none;
+}
+
+body {
+	font-family: "La Belle Aurore", serif;
+	font-size: 40px;
+	text-align: center;
+	color: #ffffe8;
+}
+
+p {
+	font-size: 19px;
+	color: black;
+	width: 250px;
+	height: 80px;
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	vertical-align: bottom;
+	z-index: 3;
+}
+
+.postmarkbutton {
+	width: 300px;
+	height: 150px;
+	font-size: 30px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	z-index: 2;
+}
+
+.description{
+	text-align:left;
+	padding-left:20px;
+}
+
+.shutup {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	z-index: 2;
+}
+
+.overlay {
+	width: 400px;
+	height: 80px;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -200px;
+}
+
+.overlaybutton {
+	width: 300px;
+	height: 80px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -150px;
+	z-index: 2;
+}
+
+.bkg {
+  z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.box { 
+	background-color: black;
+	padding: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
